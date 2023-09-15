@@ -2,24 +2,25 @@
 
 int main(void)
 {
-	int n, div = 2, big;
+	long int n, div = 2, big;
 
 	printf("Input your number and get its prime factoors: ");
-	scanf("%d", &n);
+	scanf("%ld", &n);
 
 	while(n > 1)
 	{
 		if (n % div == 0)
 		{
-			printf("%d, ", div);
+			printf("%ld, ", div);
 
 			n /= div;
 		}
 		else
+		{
 			div++;
+		}
 	}
-	// big = div;
-	// printf("big: %d", big);
-	printf("\n");
+	big = div;
+	printf("\nThe largest prime factor is: %ld\n", big);
 	return 0;
 }
