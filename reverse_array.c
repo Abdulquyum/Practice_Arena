@@ -5,7 +5,7 @@ int main(void)
 	int arr[] = {34, 56, 54, 32, 67, 89, 90, 32, 21};
 	int q, i;
 
-	for(q = 0; q < 9; q++)
+	for (q = 0; q < 9; q++)
 	{
 		printf("These are the numbers in my_array arr[%d]: %d\n", q, arr[q]);
 	}
